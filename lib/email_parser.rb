@@ -18,7 +18,6 @@ class EmailAddressParser
     email_addresses.split.collect do |email_address|
       email_address.gsub(',','')
     end.uniq
-    # binding.pry
   end
 
 
