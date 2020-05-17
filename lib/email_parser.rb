@@ -16,7 +16,7 @@ class EmailAddressParser
   
   def parse
     email_addresses.split.collect do |email_address|
-      email_address.strip
+      email_address.gsub(',','')
     end
     # binding.pry
   end
