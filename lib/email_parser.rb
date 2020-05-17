@@ -16,7 +16,7 @@ class EmailAddressParser
   
   def parse
     email_addresses.split.collect do |email_address|
-      email_address.reject(',')
+      email_address.remove(',')
     end
     # binding.pry
   end
